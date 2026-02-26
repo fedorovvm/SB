@@ -22,7 +22,8 @@ public class DiscountedProduct extends Product {
         return id;
     }
 
-    public DiscountedProduct(String title, double basicPrice, int percentDiscount, UUID id) throws IllegalArgumentException {
+    public DiscountedProduct(String title, double basicPrice,
+                             int percentDiscount, UUID id) throws IllegalArgumentException {
         super(title);
         this.basicPrice = basicPrice;
         this.percentDiscount = percentDiscount;
@@ -43,7 +44,8 @@ public class DiscountedProduct extends Product {
 
     @Override
     public String toString() {
-        return title + " со скидкой: " + getPrice() + " ( " + percentDiscount + "% )";
+        return title + " со скидкой: " + getPrice() +
+                " ( " + percentDiscount + "% )";
     }
 
     public boolean isSpecial () {

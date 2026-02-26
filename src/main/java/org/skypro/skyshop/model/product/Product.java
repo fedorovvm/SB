@@ -59,7 +59,5 @@ public abstract class Product implements Searchable {
         if (title.isBlank()) {
             throw new IllegalArgumentException("Недопустимое наименование товара");
         }
-
     }
-
 }
